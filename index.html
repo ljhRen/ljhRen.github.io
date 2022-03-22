@@ -20,6 +20,10 @@
 		<link rel="stylesheet" href="./js/lib/slick.css" />
 		<link rel="stylesheet" href="./css/default.css" />
 		<link rel="stylesheet" href="./css/style.css" />
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@3.2.3"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.10.4/polyfill.min.js"></script>
 		<script src="./js/lib/jquery-3.3.1.min.js"></script>
 		<script src="./js/lib/slick.min.js"></script>
 		<script src="./js/lib/TweenMax.min.js"></script>
@@ -28,7 +32,27 @@
 	</head>
 	<body>
 		<header>
-			<div class="header-wrap"></div>
+			<div class="header-wrap">
+				<div class="logo-wrap">
+					<h1>
+						<img src="./img/logo_black.png" alt="jhRen 로고 이미지">
+					</h1>
+				</div>
+				<div class="nav-wrap">
+					<nav class="pc-nav">
+						<ul class="clear">
+							<li>
+								<a href="./about/" title="About 페이지로 이동하기">About</a>
+							</li>
+							<li>
+								<a href="./work/" title="Work 페이지로 이동하기">Work</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- <button type="button"></button>
+					<nav class="mo-nav"></nav> -->
+				</div>
+			</div>
 		</header>
     <!-- s: Contents Area -->
 		<div class="main">
@@ -47,6 +71,7 @@
 			<div class="footer-wrap"></div>
 		</footer>
 		<script type="text/javascript"></script>
+		<script type="text/babel" src="./js/List.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
