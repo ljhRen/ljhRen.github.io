@@ -22,8 +22,8 @@
 		<link rel="stylesheet" href="./css/style.css" />
 		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@3.2.3"></script> -->
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.10.4/polyfill.min.js"></script>
+		<!-- <script type="text/javascript" src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.10.4/polyfill.min.js"></script> -->
 		<script src="./js/lib/jquery-3.3.1.min.js"></script>
 		<script src="./js/lib/slick.min.js"></script>
 		<script src="./js/lib/TweenMax.min.js"></script>
@@ -49,21 +49,57 @@
 							</li>
 						</ul>
 					</nav>
-					<!-- <button type="button"></button>
-					<nav class="mo-nav"></nav> -->
+					<button type="button" class="menu-btn">
+						<span class="bar">Bar</span>
+						<span class="bar">Bar</span>
+						<span class="bar">Bar</span>
+					</button>
+					<nav class="mo-nav">
+						<ul>
+							<li>
+								<a href="./" title="Home 페이지로 이동하기">Home</a>
+							</li>
+							<li>
+								<a href="./about/" title="About 페이지로 이동하기">About</a>
+							</li>
+							<li>
+								<a href="./work/" title="Work 페이지로 이동하기">Work</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</header>
     <!-- s: Contents Area -->
 		<div class="main">
 			<div class="container">
-				<div class="front-wrap">
-					<div class="container clear">
-						<section id="contents-00" class="sec sec-zero">
-							<div class="cage"></div>
-						</section>
+				<section id="contents-00" class="sec sec-zero">
+					<div class="cage">
+						<div class="folio-wrap">
+							<div class="folio-title"></div>
+							<ol id="folios" class="list clear">
+								<li class="folio" v-for="(folio, index) in contents" :key="index">
+									<div class="img-box">
+										<a :href="folio.innerLink" title="Work의 Vibe 페이지로 이동하기">
+											<img :src="folio.img" alt="NAVER VIBE 썸네일 이미지">=
+										</a>
+									</div>
+									<div class="info">
+										<div class="title">
+											<a :href="folio.innerLink" title="Work의 Vibe 페이지로 이동하기">
+												<span class="type">folio.type</span>
+												<span class="type-detail">folio.typeDetail</span>
+												<h3>{{folio.title}}</h3>
+											</a>
+										</div>
+										<div class="date">{{folio.date}}</div>
+										<a class="direct" :href="folio.innerLink" title="Work의 Vibe 페이지로 이동하기">view</a>
+									</div>
+								</li>
+							</ol>
+						</div>
 					</div>
-				</div>
+				</section>
 			</div>
 		</div>
     <!-- e: Contents Area -->
@@ -71,7 +107,7 @@
 			<div class="footer-wrap"></div>
 		</footer>
 		<script type="text/javascript"></script>
-		<script type="text/babel" src="./js/List.js"></script>
+		<script src="./js/List.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
