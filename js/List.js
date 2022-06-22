@@ -123,18 +123,6 @@ let folioList = {
     {
       type: 'Publishing',
       typeDetail: 'Build',
-      siteInfo: 'Tablet',
-      client: 'NIA',
-      date: '2020-11 ~ 2020-11',
-      title: 'NIA(비대면 진료 서비스) AI UX Pilot 프로젝트',
-      description: '',
-      outLink: '',
-      innerLink: '',
-      img: '',
-    },
-    {
-      type: 'Publishing',
-      typeDetail: 'Build',
       siteInfo: 'Responsive',
       client: 'SK그룹',
       date: '2020-09 ~ 2020-11',
