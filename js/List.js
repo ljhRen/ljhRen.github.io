@@ -1,5 +1,16 @@
-let folioList = {
+const folioList = {
   contents: [
+    {
+      type: 'Publishing',
+      typeDetail: 'Build',
+      siteInfo: 'Responsive',
+      client: 'NC SOFT',
+      date: '2022-07 ~ 2022-07',
+      title: 'NC SOFT PLAY NOVEL Story Map 페이지 구축',
+      description: '',
+      outLink: 'https://vibe.naver.com/about/',
+      img: './img/vibe.jpg',
+    },
     {
       type: 'Publishing',
       typeDetail: 'Build',
@@ -9,7 +20,6 @@ let folioList = {
       title: 'NAVER VIBE 서비스 소개 페이지 리뉴얼 구축',
       description: '',
       outLink: 'https://vibe.naver.com/about/',
-      innerLink: './work/vibe/',
       img: './img/vibe.jpg',
     },
     {
@@ -21,8 +31,7 @@ let folioList = {
       title: 'NCP NAVER Cloud Summit 2021 웹사이트 구축 및 운영',
       description: '',
       outLink: 'https://www.ncloud-online.com/navercloudsummit2021/',
-      innerLink: '',
-      img: '',
+      img: './img/aisummit_2021.jpg',
     },
     {
       type: 'Publishing',
@@ -33,8 +42,7 @@ let folioList = {
       title: 'M3(mnet smart+) 웹사이트 구축',
       description: 'Home, Artist > Board, Contents, Vote 페이지',
       outLink: 'https://smart.mnetjp.com/',
-      innerLink: '',
-      img: '',
+      img: './img/mnet-smart.jpg',
     },
     {
       type: 'Publishing',
@@ -45,8 +53,7 @@ let folioList = {
       title: 'NCP GAME X CONFERENCE 웨비나 웹사이트 구축 및 운영',
       description: '',
       outLink: 'https://www.gamex.game/',
-      innerLink: '',
-      img: '',
+      img: './img/gamex.jpg',
     },
     {
       type: 'Publishing',
@@ -57,8 +64,7 @@ let folioList = {
       title: '그린사이클 캠페인 마이크로 사이트 구축',
       description: '',
       outLink: '',
-      innerLink: '',
-      img: '',
+      img: './img/amore_greencycle.jpg',
     },
     {
       type: 'Publishing',
@@ -69,20 +75,7 @@ let folioList = {
       title: 'ECOEX 웹사이트 리뉴얼 구축',
       description: '',
       outLink: 'https://ecoex.kr/',
-      innerLink: '',
-      img: '',
-    },
-    {
-      type: 'Publishing',
-      typeDetail: 'Manage',
-      siteInfo: 'Responsive',
-      client: '네이버클라우드 주식회사',
-      date: '2021-01 ~ 2021-06',
-      title: '네이버클라우드 웹사이트 운영',
-      description: '',
-      outLink: 'https://navercloudcorp.com/',
-      innerLink: '',
-      img: '',
+      img: './img/ecoex.jpg',
     },
     {
       type: 'Publishing',
@@ -93,20 +86,18 @@ let folioList = {
       title: 'DL Holdings 웹사이트 구축',
       description: '',
       outLink: 'https://www.dlholdings.co.kr/ko/index.do',
-      innerLink: '',
-      img: '',
+      img: './img/',
     },
     {
       type: 'Publishing',
-      typeDetail: 'Build',
+      typeDetail: 'Build, Manage',
       siteInfo: 'Responsive',
       client: '네이버클라우드 주식회사',
-      date: '2020-11 ~ 2021-01',
-      title: '네이버클라우드 웹사이트 리뉴얼',
+      date: '2020-11 ~ 2021-06',
+      title: '네이버클라우드 웹사이트 리뉴얼 및 운영',
       description: '',
       outLink: 'https://navercloudcorp.com/',
-      innerLink: '',
-      img: '',
+      img: './img/navercloudcorp.jpg',
     },
     {
       type: 'Publishing',
@@ -117,8 +108,7 @@ let folioList = {
       title: 'profit 웹/태블릿 구축 - React(UI 개발/JSX)',
       description: '',
       outLink: '',
-      innerLink: '',
-      img: '',
+      img: './img/profit.jpg',
     },
     {
       type: 'Publishing',
@@ -129,8 +119,7 @@ let folioList = {
       title: 'SK ICT TECH SUMMIT 2020 웹사이트 구축',
       description: '',
       outLink: '',
-      innerLink: '',
-      img: '',
+      img: './img/sk_ict-summit.jpg',
     },
     {
       type: 'Publishing',
@@ -141,8 +130,7 @@ let folioList = {
       title: 'NCP 웨비나 웹사이트 구축(AI Summit)',
       description: '',
       outLink: 'https://www.ncloud-online.com/aisummit/',
-      innerLink: '',
-      img: '',
+      img: './img/aisummit_2020.jpg',
     },
     {
       type: 'Publishing',
@@ -153,8 +141,7 @@ let folioList = {
       title: '더샵갤러리 홍보 어플리케이션 - 웹뷰(갤럭시 탭)',
       description: '',
       outLink: '',
-      innerLink: '',
-      img: '',
+      img: './img/thesharp-gallery.jpg',
     },
     {
       type: 'Publishing',
@@ -165,8 +152,7 @@ let folioList = {
       title: '대림산업 ACRO 아크로라이프 웹사이트 운영',
       description: '',
       outLink: '',
-      innerLink: '',
-      img: '',
+      img: './img/acro.jpg',
     },
     {
       type: 'Publishing',
@@ -177,8 +163,7 @@ let folioList = {
       title: '하이투자증권 연간 운영',
       description: '',
       outLink: 'https://event-hi-ib.com/',
-      innerLink: '',
-      img: '',
+      img: './img/hiib-event.jpg',
     },
   ]
 };

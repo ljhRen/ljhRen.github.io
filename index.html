@@ -80,13 +80,13 @@
 							<ol id="folios" class="list clear">
 								<li class="folio" v-for="(folio, index) in contents" :key="index">
 									<div class="img-box">
-										<a :href="folio.innerLink" :title="folio.title + ' 페이지로 이동하기'">
+										<a data-slug="folio.index" :href="folio.innerLink" :title="folio.title + ' 페이지로 이동하기'">
 											<img :src="folio.img" alt="NAVER VIBE 썸네일 이미지">
 										</a>
 									</div>
 									<div class="info">
 										<div class="title">
-											<a :href="folio.innerLink" :title="folio.title + ' 페이지로 이동하기'">
+											<a data-slug="folio.index" :href="folio.innerLink" :title="folio.title + ' 페이지로 이동하기'">
 												<span class="type">{{folio.type}}</span>
 												<span class="type-detail">{{folio.typeDetail}}</span>
 												<h3>{{folio.title}}</h3>
