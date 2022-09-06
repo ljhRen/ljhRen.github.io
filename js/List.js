@@ -86,7 +86,7 @@ const folioList = {
       title: 'DL Holdings 웹사이트 구축',
       description: '',
       outLink: 'https://www.dlholdings.co.kr/ko/index.do',
-      img: './img/',
+      img: './img/dlholdings.jpg',
     },
     {
       type: 'Publishing',
