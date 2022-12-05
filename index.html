@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>jhRen Portfolio</title>
+		<title>Junghoon Lee</title>
 		<meta name="author" content="Junghoon Lee">
 		<meta name="keyword" content="Portfolio">
 		<meta name="description" content="Junghoon Lee Portfolio Website">
@@ -35,7 +35,9 @@
 			<div class="header-wrap">
 				<div class="logo-wrap">
 					<h1>
-						<img src="./img/logo_black.png" alt="jhRen 로고 이미지">
+						<a href="./">
+							<img src="./img/logo_black.png" alt="jhRen 로고 이미지">
+						</a>
 					</h1>
 				</div>
 				<div class="nav-wrap">
@@ -50,9 +52,11 @@
 						</ul>
 					</nav>
 					<button type="button" class="menu-btn">
-						<span class="bar">Bar</span>
-						<span class="bar">Bar</span>
-						<span class="bar">Bar</span>
+						<div class="wrapper clear">
+							<span class="bar">Bar</span>
+							<span class="bar">Bar</span>
+							<span class="bar">Bar</span>
+						</div>
 					</button>
 					<nav class="mo-nav">
 						<ul>
@@ -80,13 +84,13 @@
 							<ol id="folios" class="list clear">
 								<li class="folio" v-for="(folio, index) in contents" :key="index">
 									<div class="img-box">
-										<a data-slug="folio.index" :href="folio.innerLink" :title="folio.title + ' 페이지로 이동하기'">
-											<img :src="folio.img" alt="NAVER VIBE 썸네일 이미지">
+										<a :data-slug="index" :href="folio.innerLink" :title="folio.title + ' 페이지로 이동하기'">
+											<img :src="folio.img" :alt="folio.title + ' 썸네일 이미지'">
 										</a>
 									</div>
 									<div class="info">
 										<div class="title">
-											<a data-slug="folio.index" :href="folio.innerLink" :title="folio.title + ' 페이지로 이동하기'">
+											<a :data-slug="index" :href="folio.innerLink" :title="folio.title + ' 페이지로 이동하기'">
 												<span class="type">{{folio.type}}</span>
 												<span class="type-detail">{{folio.typeDetail}}</span>
 												<h3>{{folio.title}}</h3>

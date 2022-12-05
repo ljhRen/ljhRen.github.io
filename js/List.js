@@ -50,7 +50,7 @@ const folioList = {
       siteInfo: 'Responsive',
       client: '네이버클라우드 주식회사',
       date: '2021-08 ~ 2021-10',
-      title: 'NCP GAME X CONFERENCE 웨비나 웹사이트 구축 및 운영',
+      title: 'NCP GAME X CONFERENCE 2021 웨비나 웹사이트 구축 및 운영',
       description: '',
       outLink: 'https://www.gamex.game/',
       img: './img/gamex.jpg',
@@ -72,7 +72,7 @@ const folioList = {
       siteInfo: 'Responsive',
       client: 'ECOEX',
       date: '2021-04 ~ 2021-04',
-      title: 'ECOEX 웹사이트 리뉴얼 구축',
+      title: 'ECOEX LAB 웹사이트 리뉴얼 구축',
       description: '',
       outLink: 'https://ecoex.kr/',
       img: './img/ecoex.jpg',
@@ -105,7 +105,7 @@ const folioList = {
       siteInfo: 'Responsive',
       client: 'profit',
       date: '2020-11 ~ 2020-12',
-      title: 'profit 웹/태블릿 구축 - React(UI 개발/JSX)',
+      title: 'profit 웹/태블릿 구축 - UI 개발(React)',
       description: '',
       outLink: '',
       img: './img/profit.jpg',
@@ -159,8 +159,8 @@ const folioList = {
       typeDetail: 'Manage',
       siteInfo: 'Adaptive',
       client: 'DDB Korea',
-      date: '2020-03 ~',
-      title: '하이투자증권 연간 운영',
+      date: '2020-03 ~ 2022-09',
+      title: '하이투자증권 이벤트 웹사이트 연간 운영',
       description: '',
       outLink: 'https://event-hi-ib.com/',
       img: './img/hiib-event.jpg',
@@ -168,7 +168,7 @@ const folioList = {
   ]
 };
 
-let mainListFirst = new Vue({
+const mainListFirst = new Vue({
   el: '#folios',
   data: folioList,
 });
