@@ -44,10 +44,10 @@
 					<nav class="pc-nav">
 						<ul class="clear">
 							<li>
-								<a href="./about/" title="About 페이지로 이동하기">About</a>
+								<a class="en" href="./about/" title="About 페이지로 이동하기">about</a>
 							</li>
 							<li>
-								<a href="./work/" title="Work 페이지로 이동하기">Work</a>
+								<a class="en" href="./projects/" title="projects 페이지로 이동하기">projects</a>
 							</li>
 						</ul>
 					</nav>
@@ -61,13 +61,13 @@
 					<nav class="mo-nav">
 						<ul>
 							<li>
-								<a href="./" title="Home 페이지로 이동하기">Home</a>
+								<a href="./" title="Home 페이지로 이동하기">home</a>
 							</li>
 							<li>
-								<a href="./about/" title="About 페이지로 이동하기">About</a>
+								<a href="./about/" title="About 페이지로 이동하기">about</a>
 							</li>
 							<li>
-								<a href="./work/" title="Work 페이지로 이동하기">Work</a>
+								<a href="./projects/" title="projects 페이지로 이동하기">projects</a>
 							</li>
 						</ul>
 					</nav>
@@ -79,6 +79,9 @@
 			<div class="container">
 				<section id="contents-00" class="sec sec-zero">
 					<div class="cage">
+						<div class="sec-title">
+							<h3 class="en">projects</h3>
+						</div>
 						<div class="folio-wrap">
 							<div class="folio-title"></div>
 							<ol id="folios" class="list clear">
@@ -91,7 +94,7 @@
 									<div class="info">
 										<div class="title">
 											<a :data-slug="index" :href="folio.innerLink" :title="folio.title + ' 페이지로 이동하기'">
-												<span class="type">{{folio.type}}</span>
+												<!-- <span class="type">{{folio.type}}</span> -->
 												<span class="type-detail">{{folio.typeDetail}}</span>
 												<h3>{{folio.title}}</h3>
 											</a>
@@ -108,7 +111,12 @@
 		</div>
     <!-- e: Contents Area -->
 		<footer>
-			<div class="footer-wrap"></div>
+			<div class="footer-wrap">
+				<div class="en sns">
+					<a href="https://github.com/ljhRen" target="_blank">GitHub</a>
+				</div>
+				<div class="en copyright">&copy; Junghoon Lee. All rights reserved.</div>
+			</div>
 		</footer>
 		<script type="text/javascript"></script>
 		<script src="./js/List.js"></script>

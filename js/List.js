@@ -168,6 +168,8 @@ const folioList = {
   ]
 };
 
+// const workList = document.getElementById('folios');
+
 const mainListFirst = new Vue({
   el: '#folios',
   data: folioList,
