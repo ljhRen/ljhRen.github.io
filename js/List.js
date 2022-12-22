@@ -1,4 +1,4 @@
-const folioList = {
+const folioList = Object.freeze({
   contents: [
     {
       type: 'Publishing',
@@ -166,7 +166,7 @@ const folioList = {
       img: './img/hiib-event.jpg',
     },
   ]
-};
+});
 
 // const workList = document.getElementById('folios');
 

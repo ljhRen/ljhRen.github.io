@@ -11,24 +11,24 @@
 		<meta property="og:title" content="jhRen Portfolio"/>
 		<meta property="og:url" content="https://ljhren.github.io/"/>
 		<meta property="og:description" content="Junghoon Lee Portfolio Website">
-		<!-- <meta property="og:image" content="./img/og_image.png"/>
+		<!-- <meta property="og:image" content="../img/og_image.png"/>
 		<meta property="og:image:width" content="1200"/>
 		<meta property="og:image:height" content="628"/>
-		<link rel="image_src" href="./img/og_image.png" /> -->
+		<link rel="image_src" href="../img/og_image.png" /> -->
 		<link rel="canonical" href="https://ljhren.github.io/" />
-		<!-- <link rel="icon" type="image/x-icon" href="./img/favicon.ico" /> -->
-		<link rel="stylesheet" href="./js/lib/slick.css" />
-		<link rel="stylesheet" href="./css/default.css" />
-		<link rel="stylesheet" href="./css/style.css" />
+		<!-- <link rel="icon" type="image/x-icon" href="../img/favicon.ico" /> -->
+		<link rel="stylesheet" href="../js/lib/slick.css" />
+		<link rel="stylesheet" href="../css/default.css" />
+		<link rel="stylesheet" href="../css/style.css" />
 		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@3.2.3"></script> -->
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
 		<!-- <script type="text/javascript" src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.10.4/polyfill.min.js"></script> -->
-		<script src="./js/lib/jquery-3.3.1.min.js"></script>
-		<script src="./js/lib/slick.min.js"></script>
-		<script src="./js/lib/TweenMax.min.js"></script>
-		<script src="./js/lib/ScrollMagic.js"></script>
-		<script src="./js/lib/animation.gsap.min.js"></script>
+		<script src="../js/lib/jquery-3.3.1.min.js"></script>
+		<script src="../js/lib/slick.min.js"></script>
+		<script src="../js/lib/TweenMax.min.js"></script>
+		<script src="../js/lib/ScrollMagic.js"></script>
+		<script src="../js/lib/animation.gsap.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -36,7 +36,7 @@
 				<div class="logo-wrap">
 					<h1>
 						<a href="./">
-							<img src="./img/logo_black.png" alt="jhRen 로고 이미지">
+							<img src="../img/logo_black.png" alt="jhRen 로고 이미지">
 						</a>
 					</h1>
 				</div>
@@ -44,10 +44,10 @@
 					<nav class="pc-nav">
 						<ul class="clear">
 							<li>
-								<a class="en" href="./about/" title="About 페이지로 이동하기">about</a>
+								<a class="en" href="../about/" title="About 페이지로 이동하기">about</a>
 							</li>
 							<li>
-								<a class="en" href="./projects/" title="projects 페이지로 이동하기">projects</a>
+								<a class="en" href="../projects/" title="projects 페이지로 이동하기">projects</a>
 							</li>
 						</ul>
 					</nav>
@@ -64,10 +64,10 @@
 								<a href="./" title="Home 페이지로 이동하기">home</a>
 							</li>
 							<li>
-								<a href="./about/" title="About 페이지로 이동하기">about</a>
+								<a href="../about/" title="About 페이지로 이동하기">about</a>
 							</li>
 							<li>
-								<a href="./projects/" title="projects 페이지로 이동하기">projects</a>
+								<a href="../projects/" title="projects 페이지로 이동하기">projects</a>
 							</li>
 						</ul>
 					</nav>
@@ -75,33 +75,15 @@
 			</div>
 		</header>
     <!-- s: Contents Area -->
-		<div class="main">
+		<div class="about">
 			<div class="container">
-				<section id="project-area" class="sec sec-zero">
+				<section id="about-area" class="sec sec-zero">
 					<div class="cage">
 						<div class="sec-title">
-							<h3 class="en">projects</h3>
+							<h3 class="en">about</h3>
 						</div>
-						<div class="folio-wrap">
-							<div class="folio-title"></div>
-							<ol id="folios" class="list clear">
-								<li class="folio" v-for="(folio, index) in contents" :key="index">
-									<a :data-slug="index" :href="folio.innerLink" :title="folio.title + ' 페이지로 이동하기'">
-										<div class="img-wrap">
-											<div class="dim">
-												<div class="dim-info">view</div>
-											</div>
-											<img :src="folio.img" :alt="folio.title + ' 썸네일 이미지'">
-										</div>
-										<div class="info-wrap">
-											<!-- <span class="type">{{folio.type}}</span> -->
-											<span class="type-detail en">{{folio.typeDetail}}</span>
-											<h3 class="title">{{folio.title}}</h3>
-											<div class="date en">{{folio.date}}</div>
-										</div>
-									</a>
-								</li>
-							</ol>
+						<div class="about-wrap">
+							<div class="about-title"></div>
 						</div>
 					</div>
 				</section>
@@ -117,7 +99,7 @@
 			</div>
 		</footer>
 		<script type="text/javascript"></script>
-		<script src="./js/List.js"></script>
-		<script defer src="./js/main.js"></script>
+		<script src="../js/List.js"></script>
+		<script defer src="../js/main.js"></script>
 	</body>
 </html>
