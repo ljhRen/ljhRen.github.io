@@ -1,3 +1,5 @@
+const siteUrl = 'https://ljhren.github.io';
+
 const folioList = Object.freeze({
   contents: [
     {
@@ -6,10 +8,11 @@ const folioList = Object.freeze({
       siteInfo: 'Responsive',
       client: 'NCSOFT',
       date: '2022-07 ~ 2022-08',
-      title: 'NC SOFT PLAY NOVEL TL Story Map 페이지 구축',
+      title: 'NC PLAY NOVEL TL Story Map 페이지 구축',
       description: '',
       outLink: 'https://about.ncsoft.com/play-novel',
-      img: './img/nc-playnovel.jpg',
+      innerLink: '/project/playnovel/',
+      img: `${siteUrl}/img/nc-playnovel.jpg`,
     },
     {
       type: 'Publishing',
@@ -20,7 +23,8 @@ const folioList = Object.freeze({
       title: 'NAVER VIBE 서비스 소개 페이지 리뉴얼 구축',
       description: '',
       outLink: 'https://vibe.naver.com/about/',
-      img: './img/vibe.jpg',
+      innerLink: '/project/vibe/',
+      img: `${siteUrl}/img/vibe.jpg`,
     },
     {
       type: 'Publishing',
@@ -31,7 +35,8 @@ const folioList = Object.freeze({
       title: 'NCP NAVER Cloud Summit 2021 웹사이트 구축 및 운영',
       description: '',
       outLink: 'https://www.ncloud-online.com/navercloudsummit2021/',
-      img: './img/aisummit_2021.jpg',
+      innerLink: '/project/ncs2021/',
+      img: `${siteUrl}/img/aisummit_2021.jpg`,
     },
     {
       type: 'Publishing',
@@ -42,7 +47,8 @@ const folioList = Object.freeze({
       title: 'M3(mnet smart+) 웹사이트 구축',
       description: 'Home, Artist > Board, Contents, Vote 페이지',
       outLink: 'https://smart.mnetjp.com/',
-      img: './img/mnet-smart.jpg',
+      innerLink: '/project/m3/',
+      img: `${siteUrl}/img/mnet-smart.jpg`,
     },
     {
       type: 'Publishing',
@@ -53,7 +59,8 @@ const folioList = Object.freeze({
       title: 'NCP GAME X CONFERENCE 2021 웨비나 웹사이트 구축 및 운영',
       description: '',
       outLink: 'https://www.gamex.game/',
-      img: './img/gamex.jpg',
+      innerLink: '/project/gamex/',
+      img: `${siteUrl}/img/gamex.jpg`,
     },
     {
       type: 'Publishing',
@@ -64,7 +71,8 @@ const folioList = Object.freeze({
       title: '그린사이클 캠페인 마이크로 사이트 구축',
       description: '',
       outLink: '',
-      img: './img/amore_greencycle.jpg',
+      innerLink: '/project/greencycle/',
+      img: `${siteUrl}/img/amore_greencycle.jpg`,
     },
     {
       type: 'Publishing',
@@ -75,7 +83,8 @@ const folioList = Object.freeze({
       title: 'ECOEX LAB 웹사이트 리뉴얼 구축',
       description: '',
       outLink: 'https://ecoex.kr/',
-      img: './img/ecoex.jpg',
+      innerLink: '/project/ecoex/',
+      img: `${siteUrl}/img/ecoex.jpg`,
     },
     {
       type: 'Publishing',
@@ -86,7 +95,8 @@ const folioList = Object.freeze({
       title: 'DL Holdings 웹사이트 구축',
       description: '',
       outLink: 'https://www.dlholdings.co.kr/ko/index.do',
-      img: './img/dlholdings.jpg',
+      innerLink: '/project/dlholdings/',
+      img: `${siteUrl}/img/dlholdings.jpg`,
     },
     {
       type: 'Publishing',
@@ -97,7 +107,8 @@ const folioList = Object.freeze({
       title: '네이버클라우드 웹사이트 리뉴얼 및 운영',
       description: '',
       outLink: 'https://navercloudcorp.com/',
-      img: './img/navercloudcorp.jpg',
+      innerLink: '/project/navercloudcorp/',
+      img: `${siteUrl}/img/navercloudcorp.jpg`,
     },
     {
       type: 'Publishing',
@@ -108,7 +119,8 @@ const folioList = Object.freeze({
       title: 'profit 웹/태블릿 구축 - UI 개발(React)',
       description: '',
       outLink: '',
-      img: './img/profit.jpg',
+      innerLink: '/project/profit/',
+      img: `${siteUrl}/img/profit.jpg`,
     },
     {
       type: 'Publishing',
@@ -119,7 +131,8 @@ const folioList = Object.freeze({
       title: 'SK ICT TECH SUMMIT 2020 웹사이트 구축',
       description: '',
       outLink: '',
-      img: './img/sk_ict-summit.jpg',
+      innerLink: '/project/sksummit/',
+      img: `${siteUrl}/img/sk_ict-summit.jpg`,
     },
     {
       type: 'Publishing',
@@ -130,7 +143,8 @@ const folioList = Object.freeze({
       title: 'NCP 웨비나 웹사이트 구축(AI Summit)',
       description: '',
       outLink: 'https://www.ncloud-online.com/aisummit/',
-      img: './img/aisummit_2020.jpg',
+      innerLink: '/project/ncs2020',
+      img: `${siteUrl}/img/aisummit_2020.jpg`,
     },
     {
       type: 'Publishing',
@@ -141,7 +155,8 @@ const folioList = Object.freeze({
       title: '더샵갤러리 홍보 어플리케이션 - 웹뷰(갤럭시 탭)',
       description: '',
       outLink: '',
-      img: './img/thesharp-gallery.jpg',
+      innerLink: '/project/thesharp/',
+      img: `${siteUrl}/img/thesharp-gallery.jpg`,
     },
     {
       type: 'Publishing',
@@ -152,7 +167,8 @@ const folioList = Object.freeze({
       title: '대림산업 ACRO 아크로라이프 웹사이트 운영',
       description: '',
       outLink: '',
-      img: './img/acro.jpg',
+      innerLink: '/project/acro/',
+      img: `${siteUrl}/img/acro.jpg`,
     },
     {
       type: 'Publishing',
@@ -163,7 +179,8 @@ const folioList = Object.freeze({
       title: '하이투자증권 이벤트 웹사이트 연간 운영',
       description: '',
       outLink: 'https://event-hi-ib.com/',
-      img: './img/hiib-event.jpg',
+      innerLink: '/project/hiib/',
+      img: `${siteUrl}/img/hiib-event.jpg`,
     },
   ]
 });
@@ -172,6 +189,11 @@ const folioList = Object.freeze({
 
 const mainListFirst = new Vue({
   el: '#folios',
+  data: folioList,
+});
+
+const detailList = new Vue({
+  el: '.folio-detail-wrap',
   data: folioList,
 });
 

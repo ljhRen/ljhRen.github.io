@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Junghoon Lee</title>
+		<meta name="author" content="Junghoon Lee">
+		<meta name="keyword" content="Portfolio">
+		<meta name="description" content="Junghoon Lee Portfolio Website">
+		<meta property="og:title" content="jhRen Portfolio"/>
+		<meta property="og:url" content="https://ljhren.github.io/"/>
+		<meta property="og:description" content="Junghoon Lee Portfolio Website">
+		<!-- <meta property="og:image" content="../../img/og_image.png"/>
+		<meta property="og:image:width" content="1200"/>
+		<meta property="og:image:height" content="628"/>
+		<link rel="image_src" href="../../img/og_image.png" /> -->
+		<link rel="canonical" href="https://ljhren.github.io/" />
+		<!-- <link rel="icon" type="image/x-icon" href="../../img/favicon.ico" /> -->
+		<link rel="stylesheet" href="../../js/lib/slick.css" />
+		<link rel="stylesheet" href="../../css/default.css" />
+		<link rel="stylesheet" href="../../css/style.css" />
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@3.2.3"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+		<!-- <script type="text/javascript" src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.10.4/polyfill.min.js"></script> -->
+		<script src="../../js/lib/jquery-3.3.1.min.js"></script>
+		<script src="../../js/lib/slick.min.js"></script>
+		<script src="../../js/lib/TweenMax.min.js"></script>
+		<script src="../../js/lib/ScrollMagic.js"></script>
+		<script src="../../js/lib/animation.gsap.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="header-wrap">
+				<div class="logo-wrap">
+					<h1>
+						<a href="../../">
+							<img src="../../img/logo_black.png" alt="jhRen 로고 이미지">
+						</a>
+					</h1>
+				</div>
+				<div class="nav-wrap">
+					<nav class="pc-nav">
+						<ul class="clear">
+							<li>
+								<a class="en" href="../../about/" title="About 페이지로 이동하기">about</a>
+							</li>
+							<li>
+								<a class="en" href="../../projects/" title="projects 페이지로 이동하기">projects</a>
+							</li>
+						</ul>
+					</nav>
+					<button type="button" class="menu-btn">
+						<div class="wrapper clear">
+							<span class="bar">Bar</span>
+							<span class="bar">Bar</span>
+							<span class="bar">Bar</span>
+						</div>
+					</button>
+					<nav class="mo-nav">
+						<ul>
+							<li>
+								<a href="../../" title="Home 페이지로 이동하기">home</a>
+							</li>
+							<li>
+								<a href="../../about/" title="About 페이지로 이동하기">about</a>
+							</li>
+							<li>
+								<a href="../../projects/" title="projects 페이지로 이동하기">projects</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+    <!-- s: Contents Area -->
+		<div class="project">
+			<div class="container">
+				<section class="sec sec-zero">
+					<div class="cage">
+						<div class="sec-title">
+							<h3 class="en">NC PLAY<br> NOVEL TL Story Map</h3>
+						</div>
+						<div class="folio-detail-wrap">
+              <div class="top">
+                <div class="txt-area">
+                  <ul class="info">
+                    <!-- Object는 contents 내부 순서로 binding -->
+                    <li class="client">
+                      <div>client: </div>
+                      <div>{{contents[0].client}}</div>
+                    </li>
+                    <li class="typedetail">
+                      <div>work: </div>
+                      <div>{{contents[0].typeDetail}}</div>
+                    </li>
+                    <li class="siteinfo">
+                      <div>type: </div>
+                      <div>{{contents[0].siteInfo}}</div>
+                    </li>
+                    <li class="date">
+                      <div>date: </div>
+                      <div>{{contents[0].date}}</div>
+                    </li>
+                    <li class="link" v-if="contents[0].outLink">
+                      <div>link: </div>
+                      <div>
+                        <a :href="contents[0].outLink" target="_blank">site view</a>
+                      </div>
+                    </li>
+                    <!-- <div class="client">{{contents[0].client}}</div> -->
+                    <!-- <div class="type">{{contents[0].type}}</div> -->
+                    <!-- <div class="typedetail">{{contents[0].typeDetail}}</div> -->
+                    <!-- <div class="siteinfo">{{contents[0].siteInfo}}</div> -->
+                    <!-- <div class="date">{{contents[0].date}}</div> -->
+                  </ul>
+                  <div class="description">
+                    <p>어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구어쩌구 저쩌구</p>
+                  </div>
+                </div>
+                <div class="img-area">
+                  <img :src="contents[0].img" :alt="contents[0].title + '이미지'">
+                </div>
+              </div>
+              <div class="bottom">
+                <a href="../../project/">list</a>
+              </div>
+
+							<!-- <ol id="folios" class="list clear">
+								<li class="folio" v-for="(folio, index) in contents" :key="index">
+									<a :data-slug="index" :href="folio.innerLink" :title="folio.title + ' 페이지로 이동하기'">
+										<div class="img-wrap">
+											<div class="dim">
+												<div class="dim-info">view</div>
+											</div>
+											<img :src="folio.img" :alt="folio.title + ' 썸네일 이미지'">
+										</div>
+										<div class="info-wrap">
+											<span class="type-detail en">{{folio.typeDetail}}</span>
+											<h3 class="title">{{folio.title}}</h3>
+											<div class="date en">{{folio.date}}</div>
+										</div>
+									</a>
+								</li>
+							</ol> -->
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+    <!-- e: Contents Area -->
+		<footer>
+			<div class="footer-wrap">
+				<div class="en sns">
+					<a href="https://github.com/ljhRen" target="_blank">GitHub</a>
+				</div>
+				<div class="en copyright">&copy; Junghoon Lee. All rights reserved.</div>
+			</div>
+		</footer>
+		<script type="text/javascript"></script>
+		<script src="../../js/List.js"></script>
+		<script defer src="../../js/main.js"></script>
+	</body>
+</html>

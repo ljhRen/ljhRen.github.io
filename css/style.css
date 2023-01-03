@@ -221,3 +221,43 @@ footer {
 #folios .folio > a:hover .date {
   color: #fff;
 }
+
+/* Folio Details */
+.folio-detail-wrap .top .txt-area {
+  display: flex;
+  padding-bottom: 30px;
+}
+.folio-detail-wrap .top .txt-area .info {
+  flex: 1;
+  padding-right: 20px;
+}
+.folio-detail-wrap .top .txt-area .info li {
+  display: flex;
+}
+.folio-detail-wrap .top .txt-area .info li:not(:last-of-type) {
+  padding-bottom: 4px;
+}
+.folio-detail-wrap .top .txt-area .info li div:first-of-type {
+  padding-right: 6px;
+}
+.folio-detail-wrap .top .txt-area .info li div,
+.folio-detail-wrap .top .txt-area .info li div a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.folio-detail-wrap .top .txt-area .info li div a {
+  transition: .3s;
+  text-decoration: underline;
+}
+.folio-detail-wrap .top .txt-area .info li div a:hover {
+  color: #fff;
+}
+
+.folio-detail-wrap .top .txt-area .description {
+  flex: 1;
+}
+.folio-detail-wrap .top .txt-area .description p {
+  font-size: 18px;
+  font-weight: 500;
+}
