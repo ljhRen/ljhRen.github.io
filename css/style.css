@@ -47,7 +47,6 @@ header {
   display: block;
   font-size: 22px;
   font-weight: 500;
-  letter-spacing: -0.3px;
   line-height: 1.4;
   color: #000;
   transition: .3s;
@@ -118,7 +117,6 @@ footer {
 .sec-title h3 {
   font-size: 30px;
   font-weight: 500;
-  letter-spacing: -1px;
 }
 
 
@@ -231,12 +229,26 @@ footer {
   flex: 1;
   padding-right: 20px;
 }
+.folio-detail-wrap .top .txt-area .info li::before {
+  content: '-';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000;
+}
 .folio-detail-wrap .top .txt-area .info li {
   display: flex;
+  padding-left: 18px;
+  position: relative;
 }
-.folio-detail-wrap .top .txt-area .info li:not(:last-of-type) {
+/* .folio-detail-wrap .top .txt-area .info li:not(:last-of-type) {
   padding-bottom: 4px;
-}
+} */
 .folio-detail-wrap .top .txt-area .info li div:first-of-type {
   padding-right: 6px;
 }
@@ -245,6 +257,7 @@ footer {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 500;
+  line-height: 1.5;
 }
 .folio-detail-wrap .top .txt-area .info li div a {
   transition: .3s;
@@ -257,7 +270,59 @@ footer {
 .folio-detail-wrap .top .txt-area .description {
   flex: 1;
 }
-.folio-detail-wrap .top .txt-area .description p {
+/* .folio-detail-wrap .top .txt-area .description p::before {
+  content: '-';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: 18px;
   font-weight: 500;
+  line-height: 1.5;
+  color: #000;
+} */
+.folio-detail-wrap .top .txt-area .description p {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  word-break: keep-all;
+  /* padding-left: 18px; */
+}
+.folio-detail-wrap .top .txt-area .description p a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  word-break: keep-all;
+  transition: .3s;
+  text-decoration: underline;
+}
+.folio-detail-wrap .top .txt-area .description p a:hover {
+  color: #fff;
+}
+
+.folio-detail-wrap .bottom {
+  margin-top: 60px;
+}
+.folio-detail-wrap .bottom .list-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 100px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 18px;
+  background-color: transparent;
+  transition: .3s;
+}
+.folio-detail-wrap .bottom .list-btn:hover {
+  border: 1px solid #fff;
+  color: #000;
+  background-color: #fff;
 }
