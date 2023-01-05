@@ -4,13 +4,13 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Junghoon Lee - NAVER VIBE 서비스 소개 페이지 리뉴얼</title>
+		<title>Junghoon Lee - DL Holdings 웹사이트 구축</title>
 		<meta name="author" content="Junghoon Lee">
 		<meta name="keyword" content="Portfolio, 포트폴리오">
-		<meta name="description" content="NAVER VIBE 서비스 소개 페이지 리뉴얼">
-		<meta property="og:title" content="jhRen Portfolio - NAVER VIBE 서비스 소개 페이지 리뉴얼"/>
+		<meta name="description" content="DL Holdings 웹사이트 구축">
+		<meta property="og:title" content="jhRen Portfolio - DL Holdings 웹사이트 구축"/>
 		<meta property="og:url" content="https://ljhren.github.io/"/>
-		<meta property="og:description" content="NAVER VIBE 서비스 소개 페이지 리뉴얼">
+		<meta property="og:description" content="DL Holdings 웹사이트 구축">
 		<!-- <meta property="og:image" content="../../img/og_image.png"/>
 		<meta property="og:image:width" content="1200"/>
 		<meta property="og:image:height" content="628"/>
@@ -80,7 +80,7 @@
 				<section class="sec sec-zero">
 					<div class="cage">
 						<div class="sec-title">
-							<h3 class="en">NAVER VIBE <br>서비스 소개 페이지 리뉴얼</h3>
+							<h3 class="en">DL Holdings <br>웹사이트 구축</h3>
 						</div>
 						<div class="folio-detail-wrap">
               <div class="top">
@@ -89,40 +89,41 @@
                     <!-- Object는 contents 내부 Folio 최신순으로 binding -->
                     <li class="client">
                       <div>client: </div>
-                      <div>{{contents[1].client}}</div>
+                      <div>{{contents[7].client}}</div>
                     </li>
                     <li class="typedetail">
                       <div>work: </div>
-                      <div>{{contents[1].typeDetail}}</div>
+                      <div>{{contents[7].typeDetail}}</div>
                     </li>
                     <li class="siteinfo">
                       <div>type: </div>
-                      <div>{{contents[1].siteInfo}}</div>
+                      <div>{{contents[7].siteInfo}}</div>
                     </li>
                     <li class="date">
                       <div>date: </div>
-                      <div>{{contents[1].date}}</div>
+                      <div>{{contents[7].date}}</div>
                     </li>
-                    <li class="link" v-if="contents[1].outLink">
+                    <li class="link" v-if="contents[7].outLink">
                       <div>link: </div>
                       <div>
-                        <a :href="contents[1].outLink" target="_blank">site view</a>
+                        <a :href="contents[7].outLink" target="_blank">site view</a>
                       </div>
                     </li>
                   </ul>
                   <div class="description">
                     <p class="mx">
-                      NAVER VIBE의 서비스 소개 페이지 리뉴얼. <br>
-                      해당 페이지 퍼블리싱 및 JS 이벤트, 인터랙션 제작. <br>
-                      라이브러리는 jQuery, ScrollMagic, marquee, slick 사용. <br>
-                      크로스 브라우징 진행(IE 포함). <br><br>
-                      사용될 api 확인 및 페이지 로드 시에 먼저 실행되어야 할 부분들을 개발자들과 논의 후, 제작 진행. <br>
-                      각 디바이스 별 분기 처리 진행, 클라이언트 측에서 기존에 사용 중인 CSS 및 JS가 중복되지 않도록 싱크 맞추는 작업 별도 진행.
+                      DL Holdings 웹사이트 구축. <br>
+                      DL 페이지, 홍보 영상 페이지를 제외한 전체 페이지 퍼블리싱(PC/Mobile). <br>
+                      적응형으로 PC/Mobile 따로 제작 진행(국문/영문). <br>
+                      라이브러리는 jQuery, ScrollMagic, js-cookie, swiper 사용. <br>
+                      <br>
+                      js-cookie 사용하여 글자크기, 다크모드 기능 개발. <br>
+                      Admin에서 연동될 API 체킹, DOM구조 확인 및 해당 부분에 대한 가이드 작성.
                     </p>
                   </div>
                 </div>
                 <div class="img-area">
-                  <img :src="contents[1].img" :alt="contents[1].title + '이미지'">
+                  <img :src="contents[7].img" :alt="contents[7].title + '이미지'">
                 </div>
               </div>
               <div class="bottom">
