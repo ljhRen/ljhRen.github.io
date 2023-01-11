@@ -109,6 +109,20 @@ footer {
   box-sizing: border-box;
   border-top: 1px solid #000;
 }
+.footer-wrap .sns a,
+.footer-wrap .copyright {
+  font-size: 14px;
+}
+.footer-wrap .sns a {
+  display: inline-block;
+  transition: .3s;
+}
+.footer-wrap .sns a:hover {
+  color: #fff;
+}
+.footer-wrap .sns a:not(:last-of-type) {
+  margin-right: 10px;
+}
 
 /* Section title */
 .sec-title {
@@ -227,9 +241,8 @@ footer {
 }
 .folio-detail-wrap .top .txt-area .info {
   flex: 1;
-  padding-right: 20px;
 }
-.folio-detail-wrap .top .txt-area .info li::before {
+/* .folio-detail-wrap .top .txt-area .info li::before {
   content: '-';
   display: block;
   position: absolute;
@@ -238,12 +251,13 @@ footer {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #000;
-}
+} */
 .folio-detail-wrap .top .txt-area .info li {
   display: flex;
-  padding-left: 18px;
+  padding-right: 20px;
+  /* padding-left: 18px; */
   position: relative;
 }
 /* .folio-detail-wrap .top .txt-area .info li:not(:last-of-type) {
@@ -257,7 +271,7 @@ footer {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 .folio-detail-wrap .top .txt-area .info li div a {
   transition: .3s;
@@ -278,7 +292,7 @@ footer {
   left: 0;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #000;
 } */
 .folio-detail-wrap .top .txt-area .description p {
@@ -286,14 +300,14 @@ footer {
   position: relative;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.7;
   word-break: keep-all;
   /* padding-left: 18px; */
 }
 .folio-detail-wrap .top .txt-area .description p a {
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.7;
   word-break: keep-all;
   transition: .3s;
   text-decoration: underline;
@@ -325,4 +339,58 @@ footer {
   border: 1px solid #fff;
   color: #000;
   background-color: #fff;
+}
+
+/* About */
+
+.about-wrap .col-wrap {
+  display: flex;
+}
+.about-wrap .col-wrap > div {
+  flex: 1;
+}
+.about-wrap .who {
+  margin-bottom: 42px;
+}
+.about-wrap .who p {
+  font-family: 'Poppins','Noto Sans KR', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+.about-wrap .who p sup {
+  font-size: 12px;
+}
+.about-wrap .who p strong {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.about-wrap .row-wrap .sub-tit {
+  margin-bottom: 30px;
+  /* padding-bottom: 16px; */
+  /* box-sizing: border-box;
+  border-bottom: 1px solid #000; */
+  font-size: 24px;
+}
+.about-wrap .normal-wrap ol li {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.about-wrap .normal-wrap ol li:not(:last-of-type) {
+  box-sizing: border-box;
+  border-bottom: 1px solid #000;
+}
+.about-wrap .normal-wrap ol li div {
+  font-family: 'Poppins','Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.about-wrap .normal-wrap ol li div:not(:last-of-type) {
+  padding-bottom: 8px;
+}
+.about-wrap .normal-wrap ol li .exper-tit {
+  font-size: 20px;
+  font-weight: 500;
 }
