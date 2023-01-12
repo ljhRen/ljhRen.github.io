@@ -23,7 +23,7 @@ window.addEventListener('resize', () => {
   // window Width
   winWidth = window.innerWidth;
 
-  if (winWidth > 769) {
+  if (winWidth > 767) {
     menuNavWrap.classList.remove('active');
     htmlDom.classList.remove('fixed');
   }
