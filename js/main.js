@@ -10,11 +10,9 @@ function menuHandler(e) {
   if (flag === 'active') {
     menuNavWrap.classList.remove('active');
     htmlDom.classList.remove('fixed');
-    console.log('Close!');
   } else {
     menuNavWrap.classList.add('active');
     htmlDom.classList.add('fixed');
-    console.log('Open!');
   }
 }
 menuBtn.addEventListener('click', menuHandler);
