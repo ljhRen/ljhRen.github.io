@@ -557,7 +557,8 @@ footer {
 .about-wrap .who {
   margin-bottom: 42px;
 }
-.about-wrap .who p {
+.about-wrap .who p,
+.about-wrap .who p a {
   font-family: 'Poppins','Noto Sans KR', sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -567,10 +568,18 @@ footer {
 .about-wrap .who p sup {
   font-size: 12px;
 }
-.about-wrap .who p strong {
-  font-weight: 500;
-  text-decoration: underline;
+.about-wrap .who p strong,
+.about-wrap .who p strong a {
+  font-weight: 600;
 }
+.about-wrap .who p a {
+  text-decoration: underline;
+  transition: .3s;
+}
+.about-wrap .who p a:hover {
+  color: #fff;
+}
+
 .about-wrap .row-wrap .sub-tit {
   margin-bottom: 30px;
   /* padding-bottom: 16px; */
@@ -609,8 +618,12 @@ footer {
   .about-wrap .col-wrap > div:first-of-type {
     margin-bottom: 30px;
   }
-  .about-wrap .who p {
+  .about-wrap .who p,
+  .about-wrap .who p a {
     font-size: 16px;
+  }
+  .about-wrap .who p a:hover {
+    color: #000;
   }
   .about-wrap .exper {
     margin-bottom: 20px;
